@@ -185,7 +185,7 @@ i:active{
 }
 
 .toast{
-    position: absolute;
+    position: fixed;
     left: 50%;
     bottom: 28px;
     transform: translate(-50%);
