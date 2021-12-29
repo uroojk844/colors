@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Generater</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="../fontawesome-free/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="name">Color generater</div>
+    </nav>
+
+    <div class="row">
+        <div class="col">
+            <h2>Background color</h2>
+            <div class="bg-box">
+                <div class="input-group">
+                    <label for="red">Red</label>
+                    <input type="range" min="0" max="255" value="0" id="red">
+                </div>
+                <div class="input-group">
+                    <label for="Green">green</label>
+                    <input type="range" min="0" max="255" value="0" id="green">
+                </div>
+                <div class="input-group">
+                    <label for="blue">Blue</label>
+                    <input type="range" min="0" max="255" value="0" id="blue">
+                </div>
+                <div class="input-group">
+                    <label for="alpha">Opacity</label>
+                    <input type="range" min="0" max="100" value="100" id="alpha">
+                </div>
+            </div>
+
+            <h2>Result</h2>
+
+            <div class="output-box">
+                <div class="codes">
+                    <div class="rgb">rgba(0, 0, 0, 1)</div>
+                    <i title="Copy" class="fas fa-clipboard-list"></i>
+                </div>
+                <div class="output">
+                    <div class="value"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h2>Font color</h2>
+            <div class="fg-box">
+                <div class="input-group">
+                    <label for="red">Red</label>
+                    <input type="range" min="0" max="255" value="0" id="red">
+                </div>
+                <div class="input-group">
+                    <label for="Green">green</label>
+                    <input type="range" min="0" max="255" value="0" id="green">
+                </div>
+                <div class="input-group">
+                    <label for="blue">Blue</label>
+                    <input type="range" min="0" max="255" value="0" id="blue">
+                </div>
+                <div class="input-group">
+                    <label for="alpha">Opacity</label>
+                    <input type="range" min="0" max="100" value="100" id="alpha">
+                </div>
+            </div>
+
+            <h2>Result</h2>
+
+            <div class="output-box">
+                <div class="codes">
+                    <div class="rgb">rgba(0, 0, 0, 1)</div>
+                    <i title="Copy" class="fas fa-clipboard-list"></i>
+                </div>
+                <div class="output">
+                    <div class="value"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col">
+
+            <div class="bar">
+                <div class="bar-title">Preview</div>
+                <div class="bar-item">
+                    <div class="items plus"><span>A<sup>+</sup></span></div>
+                    <div class="items minus"><span>A<sup>-</sup></span></div>
+                    <div class="items bold"><i class="fas fa-bold"></i></div>
+                    <div class="items italic"><i class="fas fa-italic"></i></div>
+                </div>
+            </div>
+
+            <div class="preview">
+                <div class="value">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, excepturi perspiciatis.
+                    Architecto modi nisi deserunt natus facilis facere et ut aspernatur adipisci ipsum at delectus,
+                    animi molestias pariatur iste harum.
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="bar">
+                <div class="bar-title">CSS</div>
+                <div class="bar-item">
+                    <div class="items copyCode" title="Copy code"><i class="fas fa-clipboard-list"></i></div>
+                </div>
+            </div>
+
+            <var class="preview css">
+                background-color: <span class="bg">rgba(0, 0, 0, 1)</span>;
+                <br>
+                color: <span class="fg">rgba(0, 0, 0, 1)</span>;
+            </var>
+        </div>
+    </div>
+
+    <div class="toast">Copied!!</div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
