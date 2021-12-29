@@ -48,6 +48,10 @@ nav .name{
     grid-template-rows: min-content auto;
 }
 
+.col h2{
+    font-size: 24px;
+}
+
 .fg-box, .bg-box{
     display: grid;
     gap: 16px;
@@ -152,7 +156,8 @@ i:active{
     cursor: pointer;
     width: 30px;
     height: 30px;
-    font-size: 70%;
+    font-size: 12px;
+    font-weight: bold;
     display: grid;
     place-items: center;
     border-radius: 4px;
